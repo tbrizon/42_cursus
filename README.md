@@ -1,2 +1,4 @@
-# 42_cursus
-All my works for 42 cursus
+# 42 Cusus for tbrizon student
+![](Screenshots/42.png)
+
+Here are all my works for 42 school.
