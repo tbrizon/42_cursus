@@ -1,0 +1,10 @@
+python3 -m venv .venv  #ceer l'environement
+source .venv/bin/activate #active l'environement
+
+pip3 install --upgrade pip # pour avoir la derniere version de pip qui va nous servire a installer les librairies et import
+
+pip3 install networkX
+pip3 install matplotlib
+
+command type : ./lem-in < [map_path]
+| python3 ./lemin_visual/visu.py [map_path]

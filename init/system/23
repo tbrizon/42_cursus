@@ -1,0 +1,3 @@
+On lance la VM et on rempli login puis passwd
+changer si deja connecte : su autre_utilisateur + paddwd
+SSH: ssh autre_utilisateur@127.0.0.1

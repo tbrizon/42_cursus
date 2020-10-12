@@ -1,0 +1,19 @@
+#!/bin/bash
+echo "USER ?"
+read user
+
+red=`tput setaf 1`
+green=`tput setaf 2`
+reset=`tput sgr0`
+
+check_exist=`cat /etc/passwd | grep $user`
+if [ "$check_exist" != "$NULL" ]; then
+	sudo passwd -l $user
+	if [ "$(pgrep -u $username)" != "$NULL" ]; then
+		sudo kill -9 $(pgrep -u $user)
+	fi
+	sudo userdel -r $user
+	echo "${green}USER DELETED"
+else
+	echo "${red}user doesn't exist"
+fi

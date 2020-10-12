@@ -1,0 +1,41 @@
+#!/bin/bash
+
+rep=0
+tab=(network system scripting)
+
+function print()
+{
+	if [ $1 != ${tab[2]} ]
+	then
+		path=../$1
+	else
+		path=.
+	fi
+	list_fichiers=`ls $path`
+	for fichier in $list_fichiers
+	do
+		clear
+		echo -e "\033[35mRepository : $1, File : $fichier\033[0m\n"
+		cat $path/$fichier
+		read -p "NEXT : press enter"
+	done
+}
+
+while [ ${rep:-1} != 4 ]
+do
+	echo `clear`    
+	echo -e "Wich repository do you want to read ? : \n\033[34m[1]Network\033[0m\n\033[32m[2]System\033[0m\n\033[33m[3]Script\033[0m\n\033[31m[4]Exit\033[0m\n"
+	read rep
+	case $rep in 
+		"1" | "2" | "3")
+			print ${tab[rep - 1]}
+			;;
+		"4")
+			echo -e "\033[35mThanks ! Seeya :)\033[0m "
+			;;
+		*)
+			echo -e "\033[36mInput must be between [1] and [4]\033[0m"
+			read -p "press [enter]"
+			;;
+	esac
+done
