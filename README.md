@@ -1,4 +1,4 @@
-# 42 Cusus for tbrizon student
+# 42 Cursus for tbrizon student
 ![](Screenshots/42.png)
 
 
