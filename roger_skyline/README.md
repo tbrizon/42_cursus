@@ -1,5 +1,4 @@
-# 42 Cursus for tbrizon student
-![](Screenshots/42.png)
+![](../Screenshots/42.png)
 
 # roger-skyline-1
 This project, roger-skyline-1 let you install a Virtual Machine, discover the basics about system and network administration as well as a lots of services used on a server machine.
